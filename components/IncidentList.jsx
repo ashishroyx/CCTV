@@ -83,7 +83,7 @@ export default function IncidentList({ onIncidentSelect }) {
 
 <div className="flex items-center text-xs text-gray-400 mt-1 gap-2">
   <Image
-    src="/vector.png" // Replace with your actual image path
+    src="/Vector.png" // Replace with your actual image path
     alt="Camera Icon"
     width={14}
     height={14}
