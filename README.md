@@ -1,4 +1,4 @@
-# 🚨 SecureSight – Incident Monitoring Dashboard
+
 
 ## 🌐 Live Preview
 
