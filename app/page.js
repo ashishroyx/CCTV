@@ -32,12 +32,9 @@ export default function Home() {
 
   return (
     <div className="min-h-screen bg-black text-white flex gap-6 p-6">
-      {/* Left: Incident Player */}
       <div className="flex-[2] bg-[#121212] rounded-xl p-4 shadow-md ">
         <IncidentPlayer incident={selectedIncident} />
       </div>
-
-      {/* Right: Incident List */}
       <div className="flex-[1.4]">
         <IncidentList onIncidentSelect={setSelectedIncident} />
       </div>

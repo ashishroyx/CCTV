@@ -25,7 +25,7 @@ export default function IncidentList({ onIncidentSelect }) {
 
   return (
     <div className="bg-[#121212] text-white flex flex-col p-6 rounded-xl shadow-md">
-      {/* Header */}
+      
       <div className="flex justify-between items-center mb-4">
         <div className="flex items-center gap-2">
           <AlertTriangle className="text-red-500" />
@@ -39,7 +39,7 @@ export default function IncidentList({ onIncidentSelect }) {
         </div>
       </div>
 
-      {/* Scrollable List for only 4 items visible */}
+      
       <div className="overflow-y-auto space-y-4 pr-2 custom-scrollbar" style={{ maxHeight: "456px" }}>
         {incidents.map((incident) => (
           <div
@@ -47,7 +47,7 @@ export default function IncidentList({ onIncidentSelect }) {
             className="flex items-start bg-[#1a1a1a] rounded-lg p-3 gap-4 hover:bg-[#222] transition"
             onClick={() => onIncidentSelect?.(incident)}
           >
-            {/* Thumbnail */}
+            
             <div className="w-24 h-16 relative rounded overflow-hidden shrink-0">
               <Image
                 src={incident.thumbnailUrl || "/placeholder.png"}
@@ -57,13 +57,13 @@ export default function IncidentList({ onIncidentSelect }) {
               />
             </div>
 
-            {/* Details */}
+            
          <div className="flex-1">
   <div className="flex items-center gap-2">
     <span className="text-sm font-semibold flex items-center gap-1">
       {incident.type === "Unauthorized Access" && (
         <Image
-          src="/door.png" // your image for unauthorized
+          src="/door.png" 
           alt="Unauthorized"
           width={16}
           height={16}
@@ -71,7 +71,7 @@ export default function IncidentList({ onIncidentSelect }) {
       )}
       {incident.type === "Gun Threat" && (
         <Image
-          src="/gun.png" // your image for flag
+          src="/gun.png" 
           alt="Gun Threat"
           width={16}
           height={16}
@@ -83,7 +83,7 @@ export default function IncidentList({ onIncidentSelect }) {
 
 <div className="flex items-center text-xs text-gray-400 mt-1 gap-2">
   <Image
-    src="/Vector.png" // Replace with your actual image path
+    src="/Vector.png" 
     alt="Camera Icon"
     width={14}
     height={14}
@@ -98,7 +98,7 @@ export default function IncidentList({ onIncidentSelect }) {
   </div>
 </div>
 
-            {/* Resolve Button */}
+            
             <button
   onClick={(e) => {
     e.stopPropagation();
@@ -117,7 +117,7 @@ export default function IncidentList({ onIncidentSelect }) {
   );
 }
 
-// Helpers
+
 function formatDate(iso) {
   const date = new Date(iso);
   return date.toLocaleDateString("en-GB", {

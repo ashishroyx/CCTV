@@ -12,7 +12,7 @@ export default function IncidentPlayer({ incident }) {
 
   return (
     <div className="flex ">
-      {/* Main Video Frame with Thumbnails Overlayed */}
+      
       <div className="relative w-full h-[530px] bg-black rounded-xl overflow-hidden shadow-md">
         <Image
           src={incident.thumbnailUrl || "/placeholder.png"}
@@ -22,7 +22,7 @@ export default function IncidentPlayer({ incident }) {
           className="object-cover w-full h-full"
         />
 
-        {/* Thumbnail Strip Positioned Bottom Right */}
+        
         <div className="absolute bottom-4 right-4 flex gap-3 z-10">
           <div className="relative w-[140px] h-[80px] rounded-lg overflow-hidden border border-gray-700">
             <Image
@@ -43,13 +43,6 @@ export default function IncidentPlayer({ incident }) {
         </div>
       </div>
 
-      {/* Camera Info
-      <div className="flex items-center justify-between">
-        <div>
-          <h2 className="text-lg font-semibold mb-1">{incident.type}</h2>
-          <p className="text-sm text-gray-400">{incident.camera?.location}</p>
-        </div>
-      </div> */}
     </div>
   );
 }

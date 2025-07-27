@@ -2,7 +2,7 @@ const { PrismaClient } = require('../app/generated/prisma');
 const prisma = new PrismaClient();
 
 async function main() {
-  // Create Cameras
+  
   const cameras = await prisma.camera.createMany({
     data: [
       { name: 'Shop Floor A', location: '1st Floor' },

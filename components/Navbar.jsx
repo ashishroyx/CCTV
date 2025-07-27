@@ -3,7 +3,7 @@ export default function Navbar() {
   return (
     <nav className="w-full h-16 bg-gradient-to-r from-[#111] to-[#222] text-white flex items-center justify-between px-6 shadow">
       
-      {/* Left: Logo */}
+      
       <div className="flex items-center space-x-2">
         <img
           src="logo1.png"
@@ -13,7 +13,7 @@ export default function Navbar() {
         <span className="text-xl font-semibold">MANDLACX</span>
       </div>
 
-      {/* Center: Navigation */}
+      
       <div className="flex items-center space-x-6 text-sm font-medium">
         <div className="flex items-center space-x-1 text-yellow-400">
           <img src="dashboard.png" alt="Dashboard" className="w-4 h-4" />
@@ -37,7 +37,7 @@ export default function Navbar() {
         </div>
       </div>
 
-      {/* Right: User Info */}
+      
       <div className="flex items-center space-x-3">
         <img
           src="ME1.jpg"
